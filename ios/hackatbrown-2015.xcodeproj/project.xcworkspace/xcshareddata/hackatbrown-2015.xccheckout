@@ -14,7 +14,7 @@
 		<string>https://github.com/dyelax/hackatbrown-2015.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>hackatbrown-2015/hackatbrown-2015.xcodeproj</string>
+	<string>ios/hackatbrown-2015.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>269BAB47EB143E1E7120EA10FD5F9842C39EB83C</key>
