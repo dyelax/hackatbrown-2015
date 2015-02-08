@@ -15,8 +15,6 @@ static NSString * const kTokenSwapURL = @"http://localhost:1234/swap";
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) SPTSession *session;
-@property (nonatomic, strong) SPTAudioStreamingController *player;
 
 @end
 
@@ -60,6 +58,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
                  NSLog(@"*** Auth error: %@", error);
                  return;
              }
+             
+             self.session = session;
              
              // Call the -playUsingSession: method to play a track
              

@@ -35,6 +35,7 @@
 		AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		AC351EF31A86C3B6009E1EEB /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC351EFA1A86FD0F009E1EEB /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		C959E2CC1A86B9AA00718B48 /* hackatbrown-2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackatbrown-2015.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2D01A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2D11A86B9AA00718B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 			children = (
 				C959E2D31A86B9AA00718B48 /* AppDelegate.h */,
 				C959E2D41A86B9AA00718B48 /* AppDelegate.m */,
+				AC351EFA1A86FD0F009E1EEB /* constants.h */,
 				C959E2D91A86B9AA00718B48 /* Main.storyboard */,
 				C959E30E1A86F4F300718B48 /* IntroVC.swift */,
 				C959E30C1A86F4D800718B48 /* CreateEventVC.swift */,
