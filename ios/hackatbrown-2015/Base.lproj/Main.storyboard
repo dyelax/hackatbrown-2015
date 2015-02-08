@@ -18,9 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Ww-GSD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="287"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Ww-GSD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
                                 <color key="backgroundColor" red="0.086274509799999996" green="0.45882352939999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="Z0B-YM-Cfn"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,9 +31,12 @@
                                     <segue destination="rFn-0B-3cs" kind="presentation" identifier="modalCreateEventVC" id="KaY-3n-ozi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-WU-ymn">
-                                <rect key="frame" x="0.0" y="281" width="320" height="287"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-WU-ymn">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                                 <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="r1v-Ce-sEm"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -40,6 +46,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IEE-OM-Quh" firstAttribute="top" secondItem="KMj-WU-ymn" secondAttribute="bottom" id="EKJ-89-4Uy"/>
+                            <constraint firstItem="efx-Ww-GSD" firstAttribute="top" secondItem="WI8-wR-zwe" secondAttribute="top" id="JMI-v2-Emw"/>
+                            <constraint firstAttribute="trailing" secondItem="KMj-WU-ymn" secondAttribute="trailing" id="bNT-d6-dNN"/>
+                            <constraint firstItem="efx-Ww-GSD" firstAttribute="leading" secondItem="WI8-wR-zwe" secondAttribute="leading" id="fN7-YT-vxc"/>
+                            <constraint firstAttribute="trailing" secondItem="efx-Ww-GSD" secondAttribute="trailing" id="lFp-w6-qhm"/>
+                            <constraint firstItem="KMj-WU-ymn" firstAttribute="leading" secondItem="WI8-wR-zwe" secondAttribute="leading" id="suh-hZ-gms"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -200,19 +214,26 @@
                                             <rect key="frame" x="20" y="8" width="280" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="LLl-LX-qi1" id="A4K-kA-yQr"/>
+                                            </connections>
                                         </textField>
-                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvc-88-Bne">
-                                            <rect key="frame" x="0.0" y="75" width="320" height="162"/>
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </pickerView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVz-Hx-8lS">
                                             <rect key="frame" x="20" y="46" width="89" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvc-88-Bne">
+                                            <rect key="frame" x="0.0" y="62" width="320" height="162"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="LLl-LX-qi1" id="lw0-wq-DnH"/>
+                                                <outlet property="delegate" destination="LLl-LX-qi1" id="Mkc-7j-dM8"/>
+                                            </connections>
+                                        </pickerView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1z-9S-TzJ">
-                                            <rect key="frame" x="20" y="245" width="52" height="21"/>
+                                            <rect key="frame" x="20" y="203" width="52" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -224,9 +245,9 @@
                                         <constraint firstItem="upk-Ub-zlf" firstAttribute="top" secondItem="v4h-L8-K3o" secondAttribute="top" constant="8" id="9tS-JM-O84"/>
                                         <constraint firstItem="yvc-88-Bne" firstAttribute="leading" secondItem="v4h-L8-K3o" secondAttribute="leading" id="Agz-U3-HiZ"/>
                                         <constraint firstItem="HVz-Hx-8lS" firstAttribute="top" secondItem="upk-Ub-zlf" secondAttribute="bottom" constant="8" id="AwK-l6-OVF"/>
-                                        <constraint firstItem="yvc-88-Bne" firstAttribute="top" secondItem="HVz-Hx-8lS" secondAttribute="bottom" constant="8" id="CjL-2h-ncD"/>
+                                        <constraint firstItem="yvc-88-Bne" firstAttribute="top" secondItem="HVz-Hx-8lS" secondAttribute="bottom" constant="-5" id="CjL-2h-ncD"/>
                                         <constraint firstItem="HVz-Hx-8lS" firstAttribute="leading" secondItem="v4h-L8-K3o" secondAttribute="leading" constant="20" id="QHr-7R-zLH"/>
-                                        <constraint firstItem="Z1z-9S-TzJ" firstAttribute="top" secondItem="yvc-88-Bne" secondAttribute="bottom" constant="8" id="Qed-jm-WGl"/>
+                                        <constraint firstItem="Z1z-9S-TzJ" firstAttribute="top" secondItem="yvc-88-Bne" secondAttribute="bottom" constant="-21" id="Qed-jm-WGl"/>
                                         <constraint firstAttribute="trailing" secondItem="yvc-88-Bne" secondAttribute="trailing" id="fwk-cB-JvK"/>
                                         <constraint firstAttribute="trailing" secondItem="upk-Ub-zlf" secondAttribute="trailing" constant="20" id="i8h-W2-ojR"/>
                                         <constraint firstItem="Z1z-9S-TzJ" firstAttribute="leading" secondItem="v4h-L8-K3o" secondAttribute="leading" constant="20" id="pc9-Io-rbg"/>
@@ -261,7 +282,7 @@
                                                 <constraint firstItem="Rm2-Vt-H1N" firstAttribute="leading" secondItem="0jw-9v-08F" secondAttribute="leading" constant="20" id="mC2-EL-KyV"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.52549019610000003" green="0.61176470589999998" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.90980392160000001" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="checkmark" destination="qYG-fi-aCA" id="w27-Ag-rgt"/>
@@ -276,12 +297,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.45882352939999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="b9k-3k-xzn" secondAttribute="trailing" id="Ie8-dL-xEc"/>
                             <constraint firstItem="b9k-3k-xzn" firstAttribute="top" secondItem="aMv-pK-4ak" secondAttribute="top" id="Kyp-58-6lB"/>
                             <constraint firstItem="RkW-91-8QS" firstAttribute="top" secondItem="b9k-3k-xzn" secondAttribute="bottom" id="UkS-30-klA"/>
                             <constraint firstItem="b9k-3k-xzn" firstAttribute="leading" secondItem="aMv-pK-4ak" secondAttribute="leading" id="Zgw-y8-h8B"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vpq-fP-12H" appends="YES" id="CUH-BE-p0M"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Create Event" id="4Fk-Ku-4uO">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wvJ-xZ-fo2">
@@ -292,8 +317,16 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="eventPicker" destination="yvc-88-Bne" id="G2h-K8-WnS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czp-e6-lEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vpq-fP-12H">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="LLl-LX-qi1" id="T85-BE-TCX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1527" y="-3"/>
         </scene>

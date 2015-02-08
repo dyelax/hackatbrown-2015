@@ -10,10 +10,6 @@ import UIKit
 
 class IntroVC: UIViewController {
     
-    override func viewDidLoad() {
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -8,8 +8,16 @@
 
 import UIKit
 
-class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+    
+    @IBOutlet weak var eventPicker: UIPickerView!
+    
+    
 
+    override func viewDidLoad() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:Selector("keyboardWillAppear"), name:UIKeyboardWillShowNotification, object:nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:Selector("keyboardWillDisappear"), name:UIKeyboardWillHideNotification, object:nil);
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -31,5 +39,36 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
         
         return cell
+    }
+    
+//    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 286;
+//    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 5;
+    }
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1;
+    }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return "TEST"
+    }
+    
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
+    func keyboardWillAppear(){
+        self.eventPicker.userInteractionEnabled = false;
+    }
+    func keyboardWillDisappear(){
+        self.eventPicker.userInteractionEnabled = true;
+    }
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        self.view.endEditing(true);
     }
 }
