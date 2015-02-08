@@ -118,16 +118,10 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
                     return
                 }
                 
-<<<<<<< Updated upstream
                 // Call the -playUsingSession: method to play a track
+                println(result)
+
                 })
-//                println(partialPlaylist)
-=======
-                println()
->>>>>>> Stashed changes
-                
-            
-        
         }
     }
     
