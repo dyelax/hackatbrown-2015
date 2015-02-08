@@ -14,6 +14,18 @@ class IntroVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBOutlet weak var createEventHeight: NSLayoutConstraint!
+
+    override func viewDidLoad() {
+        let thereIsAnEvent = true;
+        if (thereIsAnEvent){
+            self.createEventHeight.constant = 40;
+            UIView.animateWithDuration(0.5, delay: 5, options: nil, animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let ad = UIApplication.sharedApplication().delegate as AppDelegate
@@ -29,7 +41,7 @@ class IntroVC: UIViewController {
                 }
                 
                 // Call the -playUsingSession: method to play a track
-                })
+        })
         
     }
 

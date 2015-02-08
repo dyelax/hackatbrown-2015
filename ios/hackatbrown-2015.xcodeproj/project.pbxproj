@@ -20,6 +20,8 @@
 		C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30E1A86F4F300718B48 /* IntroVC.swift */; };
 		C959E3121A86FCA400718B48 /* GenreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E3111A86FCA400718B48 /* GenreCell.m */; };
 		C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E3141A870EC100718B48 /* CreateEventVC.swift */; };
+		C9ADD7871A8729200022B9D8 /* SongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7861A8729200022B9D8 /* SongCell.m */; };
+		C9ADD78A1A8729F40022B9D8 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7891A8729F40022B9D8 /* Song.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		C959E3111A86FCA400718B48 /* GenreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreCell.m; sourceTree = "<group>"; };
 		C959E3131A86FDEB00718B48 /* ColorConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConstants.h; sourceTree = "<group>"; };
 		C959E3141A870EC100718B48 /* CreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
+		C9ADD7851A87291F0022B9D8 /* SongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCell.h; sourceTree = "<group>"; };
+		C9ADD7861A8729200022B9D8 /* SongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCell.m; sourceTree = "<group>"; };
+		C9ADD7881A8729F40022B9D8 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		C9ADD7891A8729F40022B9D8 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 				C959E2D91A86B9AA00718B48 /* Main.storyboard */,
 				C959E3101A86FCA400718B48 /* GenreCell.h */,
 				C959E3111A86FCA400718B48 /* GenreCell.m */,
+				C9ADD7851A87291F0022B9D8 /* SongCell.h */,
+				C9ADD7861A8729200022B9D8 /* SongCell.m */,
+				C9ADD7881A8729F40022B9D8 /* Song.h */,
+				C9ADD7891A8729F40022B9D8 /* Song.m */,
 				C959E30E1A86F4F300718B48 /* IntroVC.swift */,
 				C959E3141A870EC100718B48 /* CreateEventVC.swift */,
 				C959E30A1A86F48C00718B48 /* EventVC.swift */,
@@ -246,12 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9ADD78A1A8729F40022B9D8 /* Song.m in Sources */,
 				C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */,
 				C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */,
 				C959E3121A86FCA400718B48 /* GenreCell.m in Sources */,
 				C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */,
 				C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */,
 				C959E2D21A86B9AA00718B48 /* main.m in Sources */,
+				C9ADD7871A8729200022B9D8 /* SongCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
