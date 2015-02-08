@@ -33,14 +33,15 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
+        self.createEventHeight.constant = self.view.bounds.height;
         
-        let thereIsAnEvent = true;
-        if (thereIsAnEvent){
-            self.createEventHeight.constant = 100;
-            
-        }else{
-            self.createEventHeight.constant = 666;
-        }
+//        let thereIsAnEvent = true;
+//        if (thereIsAnEvent){
+//            self.createEventHeight.constant = 100;
+//            
+//        }else{
+//            self.createEventHeight.constant = 666;
+//        }
         UIView.animateWithDuration(0.5, delay: 5, options: nil, animations: {
             self.view.layoutIfNeeded()
             }, completion: nil)
@@ -65,6 +66,12 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
             
             println(coord.latitude)
             println(coord.longitude)
+            
+            
+            self.createEventHeight.constant = 100
+            UIView.animateWithDuration(0.5, animations: {
+                self.view.layoutIfNeeded()
+            })
         }
     }
     

@@ -32,9 +32,9 @@ class EventVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.setupWithSong(songs[indexPath.row] as Song)
         
         if indexPath.row == 0{
-            cell.backgroundColor = UIColor(red:(0xFF / 255.0), green:(0xD3 / 255.0), blue:(0x01 / 255.0), alpha:1.0)
+            cell.backgroundColor = UIColor(red:(0x16 / 255.0), green:(0x95 / 255.0), blue:(0xA3 / 255.0), alpha:1.0)
         }else{
-            cell.backgroundColor = UIColor(red:(0xE8 / 255.0), green:(0x7C / 255.0), blue:(0x00 / 255.0), alpha:1.0)
+            cell.backgroundColor = UIColor(red:(0xAC / 255.0), green:(0xF0 / 255.0), blue:(0xF2 / 255.0), alpha:1.0)
         }
         
         return cell

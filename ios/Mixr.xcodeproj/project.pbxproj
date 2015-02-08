@@ -16,7 +16,6 @@
 		C959E2DB1A86B9AA00718B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C959E2D91A86B9AA00718B48 /* Main.storyboard */; };
 		C959E2DD1A86B9AA00718B48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C959E2DC1A86B9AA00718B48 /* Images.xcassets */; };
 		C959E2E01A86B9AA00718B48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C959E2DE1A86B9AA00718B48 /* LaunchScreen.xib */; };
-		C959E2EC1A86B9AA00718B48 /* hackatbrown_2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */; };
 		C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30A1A86F48C00718B48 /* EventVC.swift */; };
 		C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30E1A86F4F300718B48 /* IntroVC.swift */; };
 		C959E3121A86FCA400718B48 /* GenreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E3111A86FCA400718B48 /* GenreCell.m */; };
@@ -25,16 +24,6 @@
 		C9ADD7871A8729200022B9D8 /* SongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7861A8729200022B9D8 /* SongCell.m */; };
 		C9ADD78A1A8729F40022B9D8 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7891A8729F40022B9D8 /* Song.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C959E2E61A86B9AA00718B48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C959E2C41A86B9AA00718B48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C959E2CB1A86B9AA00718B48;
-			remoteInfo = "hackatbrown-2015";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -50,7 +39,6 @@
 		C959E2DA1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C959E2DC1A86B9AA00718B48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C959E2DF1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C959E2E51A86B9AA00718B48 /* MixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2EA1A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackatbrown_2015Tests.m; sourceTree = "<group>"; };
 		C959E2FF1A86F43300718B48 /* hackatbrown-2015-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackatbrown-2015-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -79,13 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C959E2E21A86B9AA00718B48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				C959E2CC1A86B9AA00718B48 /* Mixr.app */,
-				C959E2E51A86B9AA00718B48 /* MixrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,24 +163,6 @@
 			productReference = C959E2CC1A86B9AA00718B48 /* Mixr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C959E2E41A86B9AA00718B48 /* MixrTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "MixrTests" */;
-			buildPhases = (
-				C959E2E11A86B9AA00718B48 /* Sources */,
-				C959E2E21A86B9AA00718B48 /* Frameworks */,
-				C959E2E31A86B9AA00718B48 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C959E2E71A86B9AA00718B48 /* PBXTargetDependency */,
-			);
-			name = MixrTests;
-			productName = "hackatbrown-2015Tests";
-			productReference = C959E2E51A86B9AA00718B48 /* MixrTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,10 +174,6 @@
 				TargetAttributes = {
 					C959E2CB1A86B9AA00718B48 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					C959E2E41A86B9AA00718B48 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = C959E2CB1A86B9AA00718B48;
 					};
 				};
 			};
@@ -233,7 +191,6 @@
 			projectRoot = "";
 			targets = (
 				C959E2CB1A86B9AA00718B48 /* Mixr */,
-				C959E2E41A86B9AA00718B48 /* MixrTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,13 +203,6 @@
 				C959E2DB1A86B9AA00718B48 /* Main.storyboard in Resources */,
 				C959E2E01A86B9AA00718B48 /* LaunchScreen.xib in Resources */,
 				C959E2DD1A86B9AA00718B48 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C959E2E31A86B9AA00718B48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,23 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C959E2E11A86B9AA00718B48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C959E2EC1A86B9AA00718B48 /* hackatbrown_2015Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C959E2E71A86B9AA00718B48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C959E2CB1A86B9AA00718B48 /* Mixr */;
-			targetProxy = C959E2E61A86B9AA00718B48 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C959E2D91A86B9AA00718B48 /* Main.storyboard */ = {
@@ -426,40 +360,6 @@
 			};
 			name = Release;
 		};
-		C959E2F31A86B9AA00718B48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "hackatbrown-2015Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MixrTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackatbrown-2015.app/hackatbrown-2015";
-			};
-			name = Debug;
-		};
-		C959E2F41A86B9AA00718B48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "hackatbrown-2015Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MixrTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackatbrown-2015.app/hackatbrown-2015";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,15 +377,6 @@
 			buildConfigurations = (
 				C959E2F01A86B9AA00718B48 /* Debug */,
 				C959E2F11A86B9AA00718B48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "MixrTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C959E2F31A86B9AA00718B48 /* Debug */,
-				C959E2F41A86B9AA00718B48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

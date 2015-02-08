@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--IntroVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="IntroVC" customModule="hackatbrown_2015" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="IntroVC" customModule="Mixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ErX-gl-VcB"/>
                         <viewControllerLayoutGuide type="bottom" id="IEE-OM-Quh"/>
@@ -20,7 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Ww-GSD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
-                                <color key="backgroundColor" red="0.086274509799999996" green="0.45882352939999999" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.32549019607843138" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="336-xo-SZj"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-WU-ymn">
                                 <rect key="frame" x="0.0" y="85" width="320" height="483"/>
-                                <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.58431372549019611" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -65,7 +65,7 @@
         <!--EventVC-->
         <scene sceneID="wNZ-Io-VmB">
             <objects>
-                <viewController id="JA0-FG-Xca" customClass="EventVC" customModule="hackatbrown_2015" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JA0-FG-Xca" customClass="EventVC" customModule="Mixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vPu-wb-Gda"/>
                         <viewControllerLayoutGuide type="bottom" id="TRo-1p-hXF"/>
@@ -209,7 +209,7 @@
         <!--Create Event-->
         <scene sceneID="kQy-zb-xcT">
             <objects>
-                <viewController id="LLl-LX-qi1" customClass="CreateEventVC" customModule="hackatbrown_2015" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LLl-LX-qi1" customClass="CreateEventVC" customModule="Mixr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EYd-A4-lSo"/>
                         <viewControllerLayoutGuide type="bottom" id="RkW-91-8QS"/>
