@@ -17,6 +17,7 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -108,16 +109,22 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
         
         if (segue.identifier == "modalEventVC" || segue.identifier == "modalCreateEventVC") {
             SPTRequest.starredListForUserInSession(session, callback: {
-                error, partialPlaylist in
+                (error, result) -> Void in
+                
                 
                 if (error != nil) {
                     NSLog("*** Auth error: %@", error)
+                    println("failed")
                     return
                 }
                 
+<<<<<<< Updated upstream
                 // Call the -playUsingSession: method to play a track
                 })
 //                println(partialPlaylist)
+=======
+                println()
+>>>>>>> Stashed changes
                 
             
         

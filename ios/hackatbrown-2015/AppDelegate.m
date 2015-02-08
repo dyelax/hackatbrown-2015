@@ -32,8 +32,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Opening a URL in Safari close to application launch may trigger
     // an iOS bug, so we wait a bit before doing so.
-//    [application performSelector:@selector(openURL:)
-//                      withObject:loginURL afterDelay:0.1];
+    [application performSelector:@selector(openURL:)
+                      withObject:loginURL afterDelay:0.1];
     
     return YES;
 }
