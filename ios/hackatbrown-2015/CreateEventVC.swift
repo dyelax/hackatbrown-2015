@@ -41,9 +41,7 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
-//    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 286;
-//    }
+
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 5;
@@ -57,6 +55,7 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return NSAttributedString(string: a, attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
     
     }
+    
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
     {
