@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <Spotify/Spotify.h>
-#import "ENAPI.h"
 
 static NSString * const kClientId = @"b72555a696a64d42b465d778d52825ec";
 static NSString * const kCallbackURL = @"hackatBrown://callback";

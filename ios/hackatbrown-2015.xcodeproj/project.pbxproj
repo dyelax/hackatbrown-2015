@@ -8,43 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AC351EF11A86BF78009E1EEB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */; };
-		AC351EF21A86BFCA009E1EEB /* libENAPILibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EEA1A86BE67009E1EEB /* libENAPILibrary.a */; };
 		AC351EF41A86C3B6009E1EEB /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF31A86C3B6009E1EEB /* Spotify.framework */; };
 		AC351EF61A86C4AD009E1EEB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */; };
 		C959E2D21A86B9AA00718B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2D11A86B9AA00718B48 /* main.m */; };
 		C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2D41A86B9AA00718B48 /* AppDelegate.m */; };
-		C959E2D81A86B9AA00718B48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2D71A86B9AA00718B48 /* ViewController.m */; };
 		C959E2DB1A86B9AA00718B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C959E2D91A86B9AA00718B48 /* Main.storyboard */; };
 		C959E2DD1A86B9AA00718B48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C959E2DC1A86B9AA00718B48 /* Images.xcassets */; };
 		C959E2E01A86B9AA00718B48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C959E2DE1A86B9AA00718B48 /* LaunchScreen.xib */; };
 		C959E2EC1A86B9AA00718B48 /* hackatbrown_2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */; };
-		C959E2F71A86F33800718B48 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2F61A86F33800718B48 /* EventVC.m */; };
-		C959E2FA1A86F34900718B48 /* CreateEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2F91A86F34900718B48 /* CreateEventVC.m */; };
-		C959E2FD1A86F38200718B48 /* IntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2FC1A86F38200718B48 /* IntroVC.m */; };
+		C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30A1A86F48C00718B48 /* EventVC.swift */; };
+		C959E30D1A86F4D800718B48 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30C1A86F4D800718B48 /* CreateEventVC.swift */; };
+		C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30E1A86F4F300718B48 /* IntroVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC351EE91A86BE67009E1EEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7EE1165416A3212F00A62D4D;
-			remoteInfo = ENAPILibrary;
-		};
-		AC351EEB1A86BE67009E1EEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7EE1166516A3213000A62D4D;
-			remoteInfo = ENAPILibraryTests;
-		};
-		AC351EED1A86BF32009E1EEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EE1165316A3212F00A62D4D;
-			remoteInfo = ENAPILibrary;
-		};
 		C959E2E61A86B9AA00718B48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C959E2C41A86B9AA00718B48 /* Project object */;
@@ -55,7 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ENAPILibrary.xcodeproj; path = ../../ENAPILibrary/ENAPILibrary.xcodeproj; sourceTree = "<group>"; };
 		AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		AC351EF31A86C3B6009E1EEB /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -64,20 +40,16 @@
 		C959E2D11A86B9AA00718B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C959E2D31A86B9AA00718B48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C959E2D41A86B9AA00718B48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C959E2D61A86B9AA00718B48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C959E2D71A86B9AA00718B48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C959E2DA1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C959E2DC1A86B9AA00718B48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C959E2DF1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C959E2E51A86B9AA00718B48 /* hackatbrown-2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackatbrown-2015Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2EA1A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackatbrown_2015Tests.m; sourceTree = "<group>"; };
-		C959E2F51A86F33800718B48 /* EventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
-		C959E2F61A86F33800718B48 /* EventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
-		C959E2F81A86F34900718B48 /* CreateEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventVC.h; sourceTree = "<group>"; };
-		C959E2F91A86F34900718B48 /* CreateEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventVC.m; sourceTree = "<group>"; };
-		C959E2FB1A86F38200718B48 /* IntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroVC.h; sourceTree = "<group>"; };
-		C959E2FC1A86F38200718B48 /* IntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroVC.m; sourceTree = "<group>"; };
+		C959E2FF1A86F43300718B48 /* hackatbrown-2015-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackatbrown-2015-Bridging-Header.h"; sourceTree = "<group>"; };
+		C959E30A1A86F48C00718B48 /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		C959E30C1A86F4D800718B48 /* CreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateEventVC.swift; path = ../CreateEventVC.swift; sourceTree = "<group>"; };
+		C959E30E1A86F4F300718B48 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC351EF61A86C4AD009E1EEB /* AVFoundation.framework in Frameworks */,
-				AC351EF21A86BFCA009E1EEB /* libENAPILibrary.a in Frameworks */,
 				AC351EF41A86C3B6009E1EEB /* Spotify.framework in Frameworks */,
 				AC351EF11A86BF78009E1EEB /* MediaPlayer.framework in Frameworks */,
 			);
@@ -102,22 +73,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC351EE51A86BE67009E1EEB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AC351EEA1A86BE67009E1EEB /* libENAPILibrary.a */,
-				AC351EEC1A86BE67009E1EEB /* ENAPILibraryTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C959E2C31A86B9AA00718B48 = {
 			isa = PBXGroup;
 			children = (
 				AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */,
 				AC351EF31A86C3B6009E1EEB /* Spotify.framework */,
 				AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */,
-				AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */,
 				C959E2CE1A86B9AA00718B48 /* hackatbrown-2015 */,
 				C959E2E81A86B9AA00718B48 /* hackatbrown-2015Tests */,
 				C959E2CD1A86B9AA00718B48 /* Products */,
@@ -138,18 +99,14 @@
 			children = (
 				C959E2D31A86B9AA00718B48 /* AppDelegate.h */,
 				C959E2D41A86B9AA00718B48 /* AppDelegate.m */,
-				C959E2D61A86B9AA00718B48 /* ViewController.h */,
-				C959E2D71A86B9AA00718B48 /* ViewController.m */,
 				C959E2D91A86B9AA00718B48 /* Main.storyboard */,
-				C959E2F51A86F33800718B48 /* EventVC.h */,
-				C959E2F61A86F33800718B48 /* EventVC.m */,
-				C959E2F81A86F34900718B48 /* CreateEventVC.h */,
-				C959E2F91A86F34900718B48 /* CreateEventVC.m */,
-				C959E2FB1A86F38200718B48 /* IntroVC.h */,
-				C959E2FC1A86F38200718B48 /* IntroVC.m */,
+				C959E30E1A86F4F300718B48 /* IntroVC.swift */,
+				C959E30C1A86F4D800718B48 /* CreateEventVC.swift */,
+				C959E30A1A86F48C00718B48 /* EventVC.swift */,
 				C959E2DC1A86B9AA00718B48 /* Images.xcassets */,
 				C959E2DE1A86B9AA00718B48 /* LaunchScreen.xib */,
 				C959E2CF1A86B9AA00718B48 /* Supporting Files */,
+				C959E2FF1A86F43300718B48 /* hackatbrown-2015-Bridging-Header.h */,
 			);
 			path = "hackatbrown-2015";
 			sourceTree = "<group>";
@@ -194,7 +151,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AC351EEE1A86BF32009E1EEB /* PBXTargetDependency */,
 			);
 			name = "hackatbrown-2015";
 			productName = "hackatbrown-2015";
@@ -248,12 +204,6 @@
 			mainGroup = C959E2C31A86B9AA00718B48;
 			productRefGroup = C959E2CD1A86B9AA00718B48 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AC351EE51A86BE67009E1EEB /* Products */;
-					ProjectRef = AC351EE41A86BE67009E1EEB /* ENAPILibrary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C959E2CB1A86B9AA00718B48 /* hackatbrown-2015 */,
@@ -261,23 +211,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AC351EEA1A86BE67009E1EEB /* libENAPILibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libENAPILibrary.a;
-			remoteRef = AC351EE91A86BE67009E1EEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AC351EEC1A86BE67009E1EEB /* ENAPILibraryTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ENAPILibraryTests.octest;
-			remoteRef = AC351EEB1A86BE67009E1EEB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C959E2CA1A86B9AA00718B48 /* Resources */ = {
@@ -304,12 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C959E2D81A86B9AA00718B48 /* ViewController.m in Sources */,
+				C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */,
+				C959E30D1A86F4D800718B48 /* CreateEventVC.swift in Sources */,
+				C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */,
 				C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */,
 				C959E2D21A86B9AA00718B48 /* main.m in Sources */,
-				C959E2FD1A86F38200718B48 /* IntroVC.m in Sources */,
-				C959E2F71A86F33800718B48 /* EventVC.m in Sources */,
-				C959E2FA1A86F34900718B48 /* CreateEventVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +256,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC351EEE1A86BF32009E1EEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ENAPILibrary;
-			targetProxy = AC351EED1A86BF32009E1EEB /* PBXContainerItemProxy */;
-		};
 		C959E2E71A86B9AA00718B48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C959E2CB1A86B9AA00718B48 /* hackatbrown-2015 */;
@@ -436,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -444,6 +372,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hackatbrown-2015/hackatbrown-2015-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/../../**";
 			};
 			name = Debug;
@@ -452,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -460,6 +391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hackatbrown-2015/hackatbrown-2015-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/../../**";
 			};
 			name = Release;
