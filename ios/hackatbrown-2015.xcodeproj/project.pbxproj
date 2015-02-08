@@ -10,6 +10,7 @@
 		AC351EF11A86BF78009E1EEB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */; };
 		AC351EF41A86C3B6009E1EEB /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF31A86C3B6009E1EEB /* Spotify.framework */; };
 		AC351EF61A86C4AD009E1EEB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */; };
+		AC351EFC1A871414009E1EEB /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC351EFB1A871414009E1EEB /* Communicator.swift */; };
 		C959E2D21A86B9AA00718B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2D11A86B9AA00718B48 /* main.m */; };
 		C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2D41A86B9AA00718B48 /* AppDelegate.m */; };
 		C959E2DB1A86B9AA00718B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C959E2D91A86B9AA00718B48 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		AC351EF31A86C3B6009E1EEB /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC351EFA1A86FD0F009E1EEB /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		AC351EFB1A871414009E1EEB /* Communicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
 		C959E2CC1A86B9AA00718B48 /* hackatbrown-2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackatbrown-2015.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2D01A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2D11A86B9AA00718B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				C959E2D31A86B9AA00718B48 /* AppDelegate.h */,
 				C959E2D41A86B9AA00718B48 /* AppDelegate.m */,
+				AC351EFB1A871414009E1EEB /* Communicator.swift */,
 				AC351EFA1A86FD0F009E1EEB /* constants.h */,
 				C959E2D91A86B9AA00718B48 /* Main.storyboard */,
 				C959E3101A86FCA400718B48 /* GenreCell.h */,
@@ -259,6 +262,7 @@
 				C9ADD78A1A8729F40022B9D8 /* Song.m in Sources */,
 				C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */,
 				C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */,
+				AC351EFC1A871414009E1EEB /* Communicator.swift in Sources */,
 				C959E3121A86FCA400718B48 /* GenreCell.m in Sources */,
 				C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */,
 				C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */,

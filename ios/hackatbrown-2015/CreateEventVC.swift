@@ -12,7 +12,7 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var eventPicker: UIPickerView!
     
-    
+    var picker = ["Happy", "Sad", "Angry", "Excited", "Relaxing"]
 
     override func viewDidLoad() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector:Selector("keyboardWillAppear"), name:UIKeyboardWillShowNotification, object:nil);
@@ -51,10 +51,12 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1;
     }
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return "TEST"
-    }
+    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        var s:NSMutableAttributedString
+        let a = picker[row]
+        return NSAttributedString(string: a, attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
     
+    }
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
     {

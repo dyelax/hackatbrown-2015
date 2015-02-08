@@ -31,6 +31,7 @@ class IntroVC: UIViewController {
         let ad = UIApplication.sharedApplication().delegate as AppDelegate
         let session = ad.session
         
+        
         if (segue.identifier == "modalEventVC") {
             SPTRequest.starredListForUserInSession(session, callback: {
                 error, session in

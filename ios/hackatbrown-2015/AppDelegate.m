@@ -15,14 +15,10 @@ static NSString * const kTokenSwapURL = @"http://localhost:1234/swap";
 
 @interface AppDelegate ()
 
-//@property (nonatomic, strong) SPTSession *session;
-//@property (nonatomic, strong) SPTAudioStreamingController *player;
-
 
 @end
 
 @implementation AppDelegate
-
 
 
 - (BOOL)application:(UIApplication *)application
