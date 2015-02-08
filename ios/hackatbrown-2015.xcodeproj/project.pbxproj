@@ -17,9 +17,9 @@
 		C959E2E01A86B9AA00718B48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C959E2DE1A86B9AA00718B48 /* LaunchScreen.xib */; };
 		C959E2EC1A86B9AA00718B48 /* hackatbrown_2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */; };
 		C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30A1A86F48C00718B48 /* EventVC.swift */; };
-		C959E30D1A86F4D800718B48 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30C1A86F4D800718B48 /* CreateEventVC.swift */; };
 		C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30E1A86F4F300718B48 /* IntroVC.swift */; };
 		C959E3121A86FCA400718B48 /* GenreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E3111A86FCA400718B48 /* GenreCell.m */; };
+		C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E3141A870EC100718B48 /* CreateEventVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +50,11 @@
 		C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackatbrown_2015Tests.m; sourceTree = "<group>"; };
 		C959E2FF1A86F43300718B48 /* hackatbrown-2015-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackatbrown-2015-Bridging-Header.h"; sourceTree = "<group>"; };
 		C959E30A1A86F48C00718B48 /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
-		C959E30C1A86F4D800718B48 /* CreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateEventVC.swift; path = ../CreateEventVC.swift; sourceTree = "<group>"; };
 		C959E30E1A86F4F300718B48 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		C959E3101A86FCA400718B48 /* GenreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreCell.h; sourceTree = "<group>"; };
 		C959E3111A86FCA400718B48 /* GenreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreCell.m; sourceTree = "<group>"; };
 		C959E3131A86FDEB00718B48 /* ColorConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConstants.h; sourceTree = "<group>"; };
+		C959E3141A870EC100718B48 /* CreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				C959E3101A86FCA400718B48 /* GenreCell.h */,
 				C959E3111A86FCA400718B48 /* GenreCell.m */,
 				C959E30E1A86F4F300718B48 /* IntroVC.swift */,
-				C959E30C1A86F4D800718B48 /* CreateEventVC.swift */,
+				C959E3141A870EC100718B48 /* CreateEventVC.swift */,
 				C959E30A1A86F48C00718B48 /* EventVC.swift */,
 				C959E3131A86FDEB00718B48 /* ColorConstants.h */,
 				C959E2DC1A86B9AA00718B48 /* Images.xcassets */,
@@ -247,9 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */,
-				C959E30D1A86F4D800718B48 /* CreateEventVC.swift in Sources */,
 				C959E30B1A86F48C00718B48 /* EventVC.swift in Sources */,
 				C959E3121A86FCA400718B48 /* GenreCell.m in Sources */,
+				C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */,
 				C959E2D51A86B9AA00718B48 /* AppDelegate.m in Sources */,
 				C959E2D21A86B9AA00718B48 /* main.m in Sources */,
 			);
