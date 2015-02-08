@@ -99,9 +99,9 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
         let session = ad.session
         
         
-        if (segue.identifier == "modalEventVC") {
+        if (segue.identifier == "modalEventVC" || segue.identifier == "modalCreateEventVC") {
             SPTRequest.starredListForUserInSession(session, callback: {
-                error, session in
+                error, partialPlaylist in
                 
                 if (error != nil) {
                     NSLog("*** Auth error: %@", error)
@@ -109,7 +109,10 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
                 }
                 
                 // Call the -playUsingSession: method to play a track
-            })
+                })
+//                println(partialPlaylist)
+                
+            
         
         }
     }
@@ -119,4 +122,6 @@ class IntroVC: UIViewController, CLLocationManagerDelegate {
     }
 
 }
+
+
 
