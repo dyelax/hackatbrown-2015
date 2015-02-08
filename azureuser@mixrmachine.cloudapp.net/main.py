@@ -3,9 +3,6 @@ from flask import Flask
 import sqlite3 as sql
 import re
 import json
-import cgi
-import requests
-from operator import itemgetter
 
 DB = "mixr.db"
 
@@ -20,6 +17,7 @@ def parseLatLong(s):
 		return (float(f1), float(f2))
 	except ValueError:
 		return (None, None)
+
 
 def setup():
 	CRS = conn.cursor()
@@ -130,19 +128,17 @@ def addthemes(eventId, clientId, themes):
 	else:
 		return json.dumps({'success': False, 'reason': 'not_creator'}), 403
 
+
+
 @app.route('/addsongs/<int:eventId>/<int:clientId>/<songs>', methods=['PUT'])
 def addsongs(eventId, clientId, songs):
 	# Select event, check to see if client is a contributor, update themes.
 	CRS = conn.cursor()
 	CRS.execute("SELECT CONTRIBUTORS, SONGS FROM EVENTS WHERE ID=?", (eventId,))
-	contributors, existing_songs = CRS.fetchone()
+	contributors, songs = CRS.fetchone()
 
 	if re.search(str(clientId), contributors):
-		existing_songs += songs
-
-		for song in songs.strip(",").split(","):
-			pullSong(song)
-
+		songs += themes
 		if songs[-1] != ',':
 			songs += ','
 
@@ -192,101 +188,16 @@ def close(password):
 @app.route('/refresh/<int:eventId>', methods=['PUT'])
 def refresh(eventId):
 	# Recalculate and refresh data. Incredibly computation heavy.
-	try:
-		CRS = conn.cursor()
-		CRS.execute("SELECT CLASSIFIERS, SONGS, EXCLUDED FROM EVENTS WHERE ID=?", (eventId,))
+	pass
 
-		classifiers, songs, excluded = CRS.fetchone()
-
-		target_genres = classifiers.strip(",").split(",")
-
-		priorities = []
-
-		for songId in songs.strip(",").split(","):
-			priority = 0
-			CRS.execute("SELECT GENRES FROM SONGS WHERE ID=?", (songId,))
-			genres = CRS.fetchone()
-
-			for genre in target_genres:
-				r = re.search(genre, genres)
-				if r:
-					priority += 10
-
-			if re.search(excluded, songId):
-				priority = 0
-
-			priorities.append([songId, priority])
-
-		priorities = sorted(priorities, key=itemgetter(1))
-		if len(priorities) > 10:
-			priorities = priorities[-10:]
-
-		playlist = ""
-		for song in priorities:
-			playlist += song[0]
-			playlist += ","
-
-		CRS.execute("UPDATE EVENTS SET PLAYLIST=? WHERE ID=?", (playlist, eventId))
-		CRS.commit()
-
-		return json.dumps({'success':True}), 200
-	except:
-		return json.dumps({'success':False}), 403
-
-def pullSong(songId):
-	CRS = conn.cursor()
-
-	CRS.execute("SELECT count(*) FROM SONGS WHERE ID=?", (songId,))
-
-	if CRS.fetchone()[0] == 0:
-
-		spotify = requests.get("https://api.spotify.com/v1/tracks/{0}".format(songId))
-
-		if spotify.status_code == 200:
-			spotify_data = spotify.json()
-
-			print(spotify_data)
-			artist = spotify_data['artists'][0]['name']
-			name = spotify_data['name']
-			artist_href = spotify_data['artists'][0]['href']
-
-			spotify_artist = requests.get(artist_href)
-
-			if spotify_artist.status_code == 200:
-				spotify_artist_data = spotify_artist.json()
-				genres = spotify_artist_data['genres']
-
-				string = "";
-				for genre in genres:
-					string += genre
-					string += ","
-
-				CRS.execute("""INSERT INTO SONGS (ID, GENRES, EVENTS) VALUES
-							   (?, ?, "")""", (songId, string))
-
-				conn.commit()
-
-#			echonest = request.get("""http://developer.echonest.com/api/v4/song/search?
-#							api_key=YOLC108TJAVYOB4TR&format=json&results=1&
-#							artist={0}&title={1}""".format(cgi.escape(artist), cgi.escape(name)))
-#
-#			if echonest.status_code = 200:
-#				echonest_data = echonest.json()
-#
-#				artist_id = echonest_data["songs"]["artist_id"]
-#
-#				moods = request.get("""http://developer.echonest.com/api/v4/artist/search?
-#				api_key=YOLC108TJAVYOB4TR&format=json&results=1&)
-	else:
-		print "Spotify API didn't work."
-		return
-
-needsSetup = False;
-if not os.path.isfile(DB):
-	needsSetup = True;
-conn = sql.connect(DB, check_same_thread=False)
-if needsSetup:
-	print("Setting up...")
-	setup()
-app.run()
-conn.close()
+if __name__ == "__main__":
+	global conn
+	needsSetup = False;
+	if not os.path.isfile(DB):
+		needsSetup = True;
+	conn = sql.connect(DB, check_same_thread=False)
+	if needsSetup:
+		print("Setting up...")
+		setup()
+	app.run()
+	conn.close()
