@@ -8,8 +8,9 @@
 
 import UIKit
 
+
 class EventVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var songs : NSMutableArray = []
+    var songs : NSMutableArray = [10]
     override func viewDidLoad() {
         songs = NSMutableArray()
         for var i = 0; i < 10; i++ {
@@ -17,6 +18,8 @@ class EventVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             song.artist = "J Beibs";
             song.title = "Turn down for hackathonz"
             song.albumCover = UIImage(named: "nirvana");
+            
+            songs.addObject(song)
         }
     }
     
@@ -27,6 +30,12 @@ class EventVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         var cell : SongCell = tableView.dequeueReusableCellWithIdentifier("songCell") as SongCell
         
         cell.setupWithSong(songs[indexPath.row] as Song)
+        
+        if indexPath.row == 0{
+            cell.backgroundColor = UIColor(red:(0xFF / 255.0), green:(0xD3 / 255.0), blue:(0x01 / 255.0), alpha:1.0)
+        }else{
+            cell.backgroundColor = UIColor(red:(0xE8 / 255.0), green:(0x7C / 255.0), blue:(0x00 / 255.0), alpha:1.0)
+        }
         
         return cell
     }

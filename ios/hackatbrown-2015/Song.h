@@ -14,5 +14,4 @@
 @property NSString *artist;
 @property UIImage *albumCover;
 
-
 @end
