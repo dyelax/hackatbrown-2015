@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C959E2CB1A86B9AA00718B48"
-               BuildableName = "hackatbrown-2015.app"
-               BlueprintName = "hackatbrown-2015"
-               ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+               BuildableName = "Mixr.app"
+               BlueprintName = "Mixr"
+               ReferencedContainer = "container:Mixr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C959E2E41A86B9AA00718B48"
-               BuildableName = "hackatbrown-2015Tests.xctest"
-               BlueprintName = "hackatbrown-2015Tests"
-               ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+               BuildableName = "MixrTests.xctest"
+               BlueprintName = "MixrTests"
+               ReferencedContainer = "container:Mixr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C959E2E41A86B9AA00718B48"
-               BuildableName = "hackatbrown-2015Tests.xctest"
-               BlueprintName = "hackatbrown-2015Tests"
-               ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+               BuildableName = "MixrTests.xctest"
+               BlueprintName = "MixrTests"
+               ReferencedContainer = "container:Mixr.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C959E2CB1A86B9AA00718B48"
-            BuildableName = "hackatbrown-2015.app"
-            BlueprintName = "hackatbrown-2015"
-            ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+            BuildableName = "Mixr.app"
+            BlueprintName = "Mixr"
+            ReferencedContainer = "container:Mixr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C959E2CB1A86B9AA00718B48"
-            BuildableName = "hackatbrown-2015.app"
-            BlueprintName = "hackatbrown-2015"
-            ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+            BuildableName = "Mixr.app"
+            BlueprintName = "Mixr"
+            ReferencedContainer = "container:Mixr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C959E2CB1A86B9AA00718B48"
-            BuildableName = "hackatbrown-2015.app"
-            BlueprintName = "hackatbrown-2015"
-            ReferencedContainer = "container:hackatbrown-2015.xcodeproj">
+            BuildableName = "Mixr.app"
+            BlueprintName = "Mixr"
+            ReferencedContainer = "container:Mixr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

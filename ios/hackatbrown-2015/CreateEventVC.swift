@@ -71,4 +71,17 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBAction func dismissKeyboard(sender: AnyObject) {
         self.view.endEditing(true);
     }
+    
+    
+    @IBAction func done(sender: AnyObject) {
+        //post event
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }

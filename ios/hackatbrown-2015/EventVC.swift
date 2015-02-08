@@ -39,4 +39,13 @@ class EventVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 59
+    }
+    
+    @IBAction func leave(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil);
+    }
+    
 }

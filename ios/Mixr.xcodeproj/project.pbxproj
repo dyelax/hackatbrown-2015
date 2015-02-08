@@ -21,6 +21,7 @@
 		C959E30F1A86F4F300718B48 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E30E1A86F4F300718B48 /* IntroVC.swift */; };
 		C959E3121A86FCA400718B48 /* GenreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C959E3111A86FCA400718B48 /* GenreCell.m */; };
 		C959E3151A870EC100718B48 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C959E3141A870EC100718B48 /* CreateEventVC.swift */; };
+		C97C54961A87369F00B2C084 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97C54951A87369F00B2C084 /* CoreLocation.framework */; };
 		C9ADD7871A8729200022B9D8 /* SongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7861A8729200022B9D8 /* SongCell.m */; };
 		C9ADD78A1A8729F40022B9D8 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADD7891A8729F40022B9D8 /* Song.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +42,7 @@
 		AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC351EFA1A86FD0F009E1EEB /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		AC351EFB1A871414009E1EEB /* Communicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
-		C959E2CC1A86B9AA00718B48 /* hackatbrown-2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackatbrown-2015.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C959E2CC1A86B9AA00718B48 /* Mixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2D01A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2D11A86B9AA00718B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C959E2D31A86B9AA00718B48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,7 +50,7 @@
 		C959E2DA1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C959E2DC1A86B9AA00718B48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C959E2DF1A86B9AA00718B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C959E2E51A86B9AA00718B48 /* hackatbrown-2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackatbrown-2015Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C959E2E51A86B9AA00718B48 /* MixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C959E2EA1A86B9AA00718B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959E2EB1A86B9AA00718B48 /* hackatbrown_2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackatbrown_2015Tests.m; sourceTree = "<group>"; };
 		C959E2FF1A86F43300718B48 /* hackatbrown-2015-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackatbrown-2015-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		C959E3111A86FCA400718B48 /* GenreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreCell.m; sourceTree = "<group>"; };
 		C959E3131A86FDEB00718B48 /* ColorConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConstants.h; sourceTree = "<group>"; };
 		C959E3141A870EC100718B48 /* CreateEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
+		C97C54951A87369F00B2C084 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C9ADD7851A87291F0022B9D8 /* SongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCell.h; sourceTree = "<group>"; };
 		C9ADD7861A8729200022B9D8 /* SongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCell.m; sourceTree = "<group>"; };
 		C9ADD7881A8729F40022B9D8 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97C54961A87369F00B2C084 /* CoreLocation.framework in Frameworks */,
 				AC351EF61A86C4AD009E1EEB /* AVFoundation.framework in Frameworks */,
 				AC351EF41A86C3B6009E1EEB /* Spotify.framework in Frameworks */,
 				AC351EF11A86BF78009E1EEB /* MediaPlayer.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		C959E2C31A86B9AA00718B48 = {
 			isa = PBXGroup;
 			children = (
+				C97C54951A87369F00B2C084 /* CoreLocation.framework */,
 				AC351EF51A86C4AD009E1EEB /* AVFoundation.framework */,
 				AC351EF31A86C3B6009E1EEB /* Spotify.framework */,
 				AC351EF01A86BF78009E1EEB /* MediaPlayer.framework */,
@@ -101,8 +105,8 @@
 		C959E2CD1A86B9AA00718B48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C959E2CC1A86B9AA00718B48 /* hackatbrown-2015.app */,
-				C959E2E51A86B9AA00718B48 /* hackatbrown-2015Tests.xctest */,
+				C959E2CC1A86B9AA00718B48 /* Mixr.app */,
+				C959E2E51A86B9AA00718B48 /* MixrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C959E2CB1A86B9AA00718B48 /* hackatbrown-2015 */ = {
+		C959E2CB1A86B9AA00718B48 /* Mixr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C959E2EF1A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "hackatbrown-2015" */;
+			buildConfigurationList = C959E2EF1A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "Mixr" */;
 			buildPhases = (
 				C959E2C81A86B9AA00718B48 /* Sources */,
 				C959E2C91A86B9AA00718B48 /* Frameworks */,
@@ -174,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = "hackatbrown-2015";
+			name = Mixr;
 			productName = "hackatbrown-2015";
-			productReference = C959E2CC1A86B9AA00718B48 /* hackatbrown-2015.app */;
+			productReference = C959E2CC1A86B9AA00718B48 /* Mixr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C959E2E41A86B9AA00718B48 /* hackatbrown-2015Tests */ = {
+		C959E2E41A86B9AA00718B48 /* MixrTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "hackatbrown-2015Tests" */;
+			buildConfigurationList = C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "MixrTests" */;
 			buildPhases = (
 				C959E2E11A86B9AA00718B48 /* Sources */,
 				C959E2E21A86B9AA00718B48 /* Frameworks */,
@@ -192,9 +196,9 @@
 			dependencies = (
 				C959E2E71A86B9AA00718B48 /* PBXTargetDependency */,
 			);
-			name = "hackatbrown-2015Tests";
+			name = MixrTests;
 			productName = "hackatbrown-2015Tests";
-			productReference = C959E2E51A86B9AA00718B48 /* hackatbrown-2015Tests.xctest */;
+			productReference = C959E2E51A86B9AA00718B48 /* MixrTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C959E2C71A86B9AA00718B48 /* Build configuration list for PBXProject "hackatbrown-2015" */;
+			buildConfigurationList = C959E2C71A86B9AA00718B48 /* Build configuration list for PBXProject "Mixr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C959E2CB1A86B9AA00718B48 /* hackatbrown-2015 */,
-				C959E2E41A86B9AA00718B48 /* hackatbrown-2015Tests */,
+				C959E2CB1A86B9AA00718B48 /* Mixr */,
+				C959E2E41A86B9AA00718B48 /* MixrTests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		C959E2E71A86B9AA00718B48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C959E2CB1A86B9AA00718B48 /* hackatbrown-2015 */;
+			target = C959E2CB1A86B9AA00718B48 /* Mixr */;
 			targetProxy = C959E2E61A86B9AA00718B48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,7 +401,7 @@
 				INFOPLIST_FILE = "hackatbrown-2015/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mixr;
 				SWIFT_OBJC_BRIDGING_HEADER = "hackatbrown-2015/hackatbrown-2015-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/../../**";
@@ -416,7 +420,7 @@
 				INFOPLIST_FILE = "hackatbrown-2015/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mixr;
 				SWIFT_OBJC_BRIDGING_HEADER = "hackatbrown-2015/hackatbrown-2015-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/../../**";
 			};
@@ -436,7 +440,7 @@
 				);
 				INFOPLIST_FILE = "hackatbrown-2015Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MixrTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackatbrown-2015.app/hackatbrown-2015";
 			};
 			name = Debug;
@@ -451,7 +455,7 @@
 				);
 				INFOPLIST_FILE = "hackatbrown-2015Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MixrTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackatbrown-2015.app/hackatbrown-2015";
 			};
 			name = Release;
@@ -459,7 +463,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C959E2C71A86B9AA00718B48 /* Build configuration list for PBXProject "hackatbrown-2015" */ = {
+		C959E2C71A86B9AA00718B48 /* Build configuration list for PBXProject "Mixr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C959E2ED1A86B9AA00718B48 /* Debug */,
@@ -468,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C959E2EF1A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "hackatbrown-2015" */ = {
+		C959E2EF1A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "Mixr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C959E2F01A86B9AA00718B48 /* Debug */,
@@ -477,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "hackatbrown-2015Tests" */ = {
+		C959E2F21A86B9AA00718B48 /* Build configuration list for PBXNativeTarget "MixrTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C959E2F31A86B9AA00718B48 /* Debug */,
