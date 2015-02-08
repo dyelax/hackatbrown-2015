@@ -41,7 +41,6 @@ class CreateEventVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
-
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 5;

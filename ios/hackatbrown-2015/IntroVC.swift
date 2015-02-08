@@ -17,6 +17,8 @@ class IntroVC: UIViewController {
     @IBOutlet weak var createEventHeight: NSLayoutConstraint!
 
     override func viewDidLoad() {
+        
+        
         let thereIsAnEvent = true;
         if (thereIsAnEvent){
             self.createEventHeight.constant = 40;
@@ -32,16 +34,17 @@ class IntroVC: UIViewController {
         let session = ad.session
         
         
-        if (segue.identifier == "modalEventVC") {
+        if (segue.identifier == "modalEventVC" || segue.identifier == "modalCreateEventVC") {
             SPTRequest.starredListForUserInSession(session, callback: {
-                error, session in
+                error, partialPlaylist in
                 
                 if (error != nil) {
                     NSLog("*** Auth error: %@", error)
                     return
                 }
                 
-                // Call the -playUsingSession: method to play a track
+                println(partialPlaylist)
+                
         })
         
     }
